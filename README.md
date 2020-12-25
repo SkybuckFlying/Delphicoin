@@ -52,7 +52,10 @@ Requirements to take part in this project:
    Then process the entire file by simply moving the cursor from top to bottom through the file with the down arrow on the keyboard.
    Another possibility is to use textpad editor and a plugin called "tabout"
    
-7. One big class per unit. 
+7. One big class per unit. C/C++/H/HPP files containing multiple classes, enums or other data structures must be split up into multiple files.
+   The orginal file name will be used as a subfolder to keep these files together to indicate the presence of a "module" or belonging together.
+   ( For now at least, perhaps in future these moved to parent folder for more easy browsing however delphi's project file should be sufficient
+     for easily browsing sub folders and units/files in there as long as they are added to the project file which should be done !)
    
 #### Helpfull conversion tools:
 
