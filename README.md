@@ -76,6 +76,7 @@ Requirements to take part in this project:
 2. Tortoise Git:  https://tortoisegit.org/
 3. Delphi: https://www.embarcadero.com/products/delphi
 4. Microsoft windows: https://www.microsoft.com/en-us/windows
+
 Optionally 5. https://www.lazarus-ide.org/
        
 #### Helpfull conversion tools:
