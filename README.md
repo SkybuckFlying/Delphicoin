@@ -27,3 +27,60 @@ Requirements to take part in this project:
 3. For now the workflow will be to fork this project or set upstream to it and issue pull request to incorporate your conversions into this main project.
 4. The branch for the delphi conversion will be called: "Delphicoin" as a nickname for this project ! :)
 5. It's ok to be messy everything helps ! =D
+6. It is preferred to use tab characters for indentation.
+
+   In Delphi->Tools->Options:
+   
+   Use Tab Character Checked V 
+   
+   Block Ident = 4
+   
+   Tab Stops = 4
+   
+   Cursor through tabs Checked V
+   
+   Optimal Fill Checked V
+   
+   Backspace unindents Checked V    
+   
+   Tip: With these settings enabled an easy but slower way to convert these spaces to tabs is to enable:
+   
+   Show tab character
+   
+   Show space character
+   
+   Then process the entire file by simply moving the cursor from top to bottom through the file with the down arrow on the keyboard.
+   Another possibility is to use textpad editor and a plugin called "tabout"
+   
+7. One big class per unit. C/C++/H/HPP files containing multiple classes, enums or other data structures must be split up into multiple files.
+   The orginal file name will be used as a subfolder to keep these files together to indicate the presence of a "module" or belonging together.
+   ( For now at least, perhaps in future these moved to parent folder for more easy browsing however delphi's project file should be sufficient
+     for easily browsing sub folders and units/files in there as long as they are added to the project file which should be done !)
+     
+8. All technical units should start with unit_ prefix in their filenames. 
+
+9. Form units for gui can simple be called UnitFormSomething.pas without the underscore.
+
+10. Normally speaking all types should start with a capital letter T. Any C's for classes are to be replaced by capital letter T.
+
+11. The name of the type should be reflected in the filename as follows: for type Texample: Unit_TExampleType.pas
+
+12. Comments like these: /** someting */ should be converted as {** Something *} perhaps this will be usefull later for documentation generation ?!?
+
+13. Commits should be done with git commit. Enter a short 50 character yellow description line at the top by pressing insert. Leave one blank line below that.
+    Optionally enter a gray longer message below that, max character length should be 72. Then press escape and write :wq    (for write and quite)
+       
+#### Helpfull conversion tools:
+
+http://rvelthuis.de/programs/convertpack.html
+
+https://github.com/WouterVanNifterick/C-To-Delphi
+
+#### Helpfull conversion links:
+http://rvelthuis.de/articles/articles-convert.html
+
+## Join discord Bitcoin2Delphi server to coordinate conversion effort
+
+https://discord.gg/9UrvSxzh
+
+Here we can meet and discuss who will convert what file so that duplicate efforts are/can be avoided.  
