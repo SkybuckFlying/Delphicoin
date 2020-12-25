@@ -35,3 +35,9 @@ Requirements to take part in this project:
    Cursor through tabs Checked V
    Optimal Fill Checked V
    Backspace unindents Checked V   
+   
+   Tip: With these settings enabled an easy but slower way to convert these spaces to tabs is to enable:
+   Show tab character
+   Show space character
+   Then process the entire file by simply moving the cursor from top to bottom through the file with the down arrow on the keyboard.
+   Another possibility is to use textpad editor and a plugin called "tabout"
