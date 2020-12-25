@@ -66,7 +66,10 @@ Requirements to take part in this project:
 11. The name of the type should be reflected in the filename as follows: for type Texample: Unit_TExampleType.pas
 
 12. Comments like these: /** someting */ should be converted as {** Something *} perhaps this will be usefull later for documentation generation ?!?
-   
+
+13. Commits should be done with git commit. Enter a short 50 character yellow description line at the top by pressing insert. Leave one blank line below that.
+    Optionally enter a gray longer message below that, max character length should be 72. Then press escape and write :wq    (for write and quite)
+       
 #### Helpfull conversion tools:
 
 http://rvelthuis.de/programs/convertpack.html
