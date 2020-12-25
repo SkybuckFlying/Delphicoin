@@ -27,4 +27,11 @@ Requirements to take part in this project:
 3. For now the workflow will be to fork this project or set upstream to it and issue pull request to incorporate your conversions into this main project.
 4. The branch for the delphi conversion will be called: "Delphicoin" as a nickname for this project ! :)
 5. It's ok to be messy everything helps ! =D
-6. It is preferred to use tab characters for indentation. In Delphi->Tools->Options-> Block Ident = 4 and Tab Stops = 4
+6. It is preferred to use tab characters for indentation. 
+   In Delphi->Tools->Options:
+   Use Tab Character Checked V
+   Block Ident = 4
+   Tab Stops = 4
+   Cursor through tabs Checked V
+   Optimal Fill Checked V
+   Backspace unindents Checked V   
