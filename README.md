@@ -29,7 +29,7 @@ Requirements to take part in this project:
 5. It's ok to be messy everything helps ! =D
 6. It is preferred to use tab characters for indentation. 
    In Delphi->Tools->Options:
-   Use Tab Character Checked V
+   Use Tab Character Checked V   
    Block Ident = 4
    Tab Stops = 4
    Cursor through tabs Checked V
