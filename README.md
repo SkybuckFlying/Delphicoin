@@ -63,4 +63,8 @@ https://github.com/WouterVanNifterick/C-To-Delphi
 #### Helpfull conversion links:
 http://rvelthuis.de/articles/articles-convert.html
 
-   
+## Join discord Bitcoin2Delphi server to coordinate conversion effort
+
+https://discord.gg/9UrvSxzh
+
+Here we can meet and discuss who will convert what file so that duplicate efforts are/can be avoided.  
