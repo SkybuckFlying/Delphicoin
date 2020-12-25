@@ -70,6 +70,14 @@ Requirements to take part in this project:
 13. Commits should be done with git commit. Enter a short 50 character yellow description line at the top by pressing insert. Leave one blank line below that.
     Optionally enter a gray longer message below that, max character length should be 72. Then press escape and write :wq    (for write and quite)
        
+#### Required software:
+
+1. Git: https://git-scm.com/
+2. Tortoise Git:  https://tortoisegit.org/
+3. Delphi: https://www.embarcadero.com/products/delphi
+4. Microsoft windows: https://www.microsoft.com/en-us/windows
+Optionally 5. https://www.lazarus-ide.org/
+       
 #### Helpfull conversion tools:
 
 http://rvelthuis.de/programs/convertpack.html
