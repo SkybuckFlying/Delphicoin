@@ -60,6 +60,10 @@ Requirements to take part in this project:
 8. All technical units should start with unit_ prefix in their filenames. 
 
 9. Form units for gui can simple be called UnitFormSomething.pas without the underscore.
+
+10. Normally speaking all types should start with a capital letter T. Any C's for classes are to be replaced by capital letter T.
+
+11. The name of the type should be reflected in the filename as follows: for type Texample: unit_TExampleType.pas
    
 #### Helpfull conversion tools:
 
