@@ -63,7 +63,7 @@ Requirements to take part in this project:
 
 10. Normally speaking all types should start with a capital letter T. Any C's for classes are to be replaced by capital letter T.
 
-11. The name of the type should be reflected in the filename as follows: for type Texample: unit_TExampleType.pas
+11. The name of the type should be reflected in the filename as follows: for type Texample: Unit_TExampleType.pas
 
 12. Comments like these: /** someting */ should be converted as {** Something *} perhaps this will be usefull later for documentation generation ?!?
    
