@@ -56,6 +56,10 @@ Requirements to take part in this project:
    The orginal file name will be used as a subfolder to keep these files together to indicate the presence of a "module" or belonging together.
    ( For now at least, perhaps in future these moved to parent folder for more easy browsing however delphi's project file should be sufficient
      for easily browsing sub folders and units/files in there as long as they are added to the project file which should be done !)
+     
+8. All technical units should start with unit_ prefix in their filenames. 
+
+9. Form units for gui can simple be called UnitFormSomething.pas without the underscore.
    
 #### Helpfull conversion tools:
 
