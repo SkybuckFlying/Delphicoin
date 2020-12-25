@@ -52,6 +52,8 @@ Requirements to take part in this project:
    Then process the entire file by simply moving the cursor from top to bottom through the file with the down arrow on the keyboard.
    Another possibility is to use textpad editor and a plugin called "tabout"
    
+7. One big class per unit. 
+   
 #### Helpfull conversion tools:
 
 http://rvelthuis.de/programs/convertpack.html
