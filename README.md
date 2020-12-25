@@ -1,3 +1,11 @@
+# The super project Bitcoin2Delphi for this conversion attempt is here:
+
+https://github.com/SkybuckFlying/Bitcoin2Delphi
+
+For now it is advised to simply clone the super project.
+
+The/this delphicoin repository below will function as a collector to collect the converted delphi code ! =D
+
 # Delphicoin
 
 #### Bitcoin for Pascal/Delphi programming language !
