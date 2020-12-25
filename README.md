@@ -41,3 +41,13 @@ Requirements to take part in this project:
    Show space character
    Then process the entire file by simply moving the cursor from top to bottom through the file with the down arrow on the keyboard.
    Another possibility is to use textpad editor and a plugin called "tabout"
+   
+#### Helpfull conversion tools:
+
+http://rvelthuis.de/programs/convertpack.html
+https://github.com/WouterVanNifterick/C-To-Delphi
+
+#### Helpfull conversion links:
+http://rvelthuis.de/articles/articles-convert.html
+
+   
