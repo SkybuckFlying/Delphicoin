@@ -49,7 +49,17 @@ uses
   Unit_TMutableTransaction in 'Primitives\Transaction\Unit_TMutableTransaction.pas',
   Unit_TGenTxid in 'Primitives\Transaction\Unit_TGenTxid.pas',
   Unit_UnserializeTransaction in 'Primitives\Transaction\Unit_UnserializeTransaction.pas',
-  Unit_SerializeTransaction in 'Primitives\Transaction\Unit_SerializeTransaction.pas';
+  Unit_SerializeTransaction in 'Primitives\Transaction\Unit_SerializeTransaction.pas',
+  Unit_Coins_Utilities in 'Coins\Unit_Coins_Utilities.pas',
+  Unit_TSaltedOutputHasher in 'Coins\Unit_TSaltedOutputHasher.pas',
+  Unit_TCoinsCacheEntry in 'Coins\Unit_TCoinsCacheEntry.pas',
+  Unit_TCoinsViewCursor in 'Coins\Unit_TCoinsViewCursor.pas',
+  Unit_TCoinsView in 'Coins\Unit_TCoinsView.pas',
+  Unit_TCoinsViewBacked in 'Coins\Unit_TCoinsViewBacked.pas',
+  Unit_TCoinsViewCache in 'Coins\Unit_TCoinsViewCache.pas',
+  Unit_TCoinsViewErrorCatcher in 'Coins\Unit_TCoinsViewErrorCatcher.pas',
+  Unit_TCoin in 'Coins\Unit_TCoin.pas',
+  Unit_TCoinsMap in 'Coins\Unit_TCoinsMap.pas';
 
 procedure Main;
 begin

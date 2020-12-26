@@ -164,6 +164,16 @@
         <DCCReference Include="Primitives\Transaction\Unit_TGenTxid.pas"/>
         <DCCReference Include="Primitives\Transaction\Unit_UnserializeTransaction.pas"/>
         <DCCReference Include="Primitives\Transaction\Unit_SerializeTransaction.pas"/>
+        <DCCReference Include="Coins\Unit_Coins_Utilities.pas"/>
+        <DCCReference Include="Coins\Unit_TSaltedOutputHasher.pas"/>
+        <DCCReference Include="Coins\Unit_TCoinsCacheEntry.pas"/>
+        <DCCReference Include="Coins\Unit_TCoinsViewCursor.pas"/>
+        <DCCReference Include="Coins\Unit_TCoinsView.pas"/>
+        <DCCReference Include="Coins\Unit_TCoinsViewBacked.pas"/>
+        <DCCReference Include="Coins\Unit_TCoinsViewCache.pas"/>
+        <DCCReference Include="Coins\Unit_TCoinsViewErrorCatcher.pas"/>
+        <DCCReference Include="Coins\Unit_TCoin.pas"/>
+        <DCCReference Include="Coins\Unit_TCoinsMap.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
