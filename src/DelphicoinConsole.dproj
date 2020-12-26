@@ -152,6 +152,18 @@
         <DCCReference Include="Chain\Unit_TBlockStatus.pas"/>
         <DCCReference Include="Chain\Unit_TDiskBlockIndex.pas"/>
         <DCCReference Include="Chain\Unit_TChain.pas"/>
+        <DCCReference Include="Primitives\Block\Unit_TBlockLocator.pas"/>
+        <DCCReference Include="Primitives\Block\Unit_TBlock.pas"/>
+        <DCCReference Include="Primitives\Block\Unit_TBlockHeader.pas"/>
+        <DCCReference Include="Primitives\Transaction\Unit_TTransactionRef.pas"/>
+        <DCCReference Include="Primitives\Transaction\Unit_TOutPoint.pas"/>
+        <DCCReference Include="Primitives\Transaction\Unit_TTxIn.pas"/>
+        <DCCReference Include="Primitives\Transaction\Unit_TTxOut.pas"/>
+        <DCCReference Include="Primitives\Transaction\Unit_TTransaction.pas"/>
+        <DCCReference Include="Primitives\Transaction\Unit_TMutableTransaction.pas"/>
+        <DCCReference Include="Primitives\Transaction\Unit_TGenTxid.pas"/>
+        <DCCReference Include="Primitives\Transaction\Unit_UnserializeTransaction.pas"/>
+        <DCCReference Include="Primitives\Transaction\Unit_SerializeTransaction.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

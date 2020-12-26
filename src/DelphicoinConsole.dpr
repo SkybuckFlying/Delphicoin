@@ -37,7 +37,19 @@ uses
   Unit_TBlockIndex in 'Chain\Unit_TBlockIndex.pas',
   Unit_TBlockStatus in 'Chain\Unit_TBlockStatus.pas',
   Unit_TDiskBlockIndex in 'Chain\Unit_TDiskBlockIndex.pas',
-  Unit_TChain in 'Chain\Unit_TChain.pas';
+  Unit_TChain in 'Chain\Unit_TChain.pas',
+  Unit_TBlockLocator in 'Primitives\Block\Unit_TBlockLocator.pas',
+  Unit_TBlock in 'Primitives\Block\Unit_TBlock.pas',
+  Unit_TBlockHeader in 'Primitives\Block\Unit_TBlockHeader.pas',
+  Unit_TTransactionRef in 'Primitives\Transaction\Unit_TTransactionRef.pas',
+  Unit_TOutPoint in 'Primitives\Transaction\Unit_TOutPoint.pas',
+  Unit_TTxIn in 'Primitives\Transaction\Unit_TTxIn.pas',
+  Unit_TTxOut in 'Primitives\Transaction\Unit_TTxOut.pas',
+  Unit_TTransaction in 'Primitives\Transaction\Unit_TTransaction.pas',
+  Unit_TMutableTransaction in 'Primitives\Transaction\Unit_TMutableTransaction.pas',
+  Unit_TGenTxid in 'Primitives\Transaction\Unit_TGenTxid.pas',
+  Unit_UnserializeTransaction in 'Primitives\Transaction\Unit_UnserializeTransaction.pas',
+  Unit_SerializeTransaction in 'Primitives\Transaction\Unit_SerializeTransaction.pas';
 
 procedure Main;
 begin
