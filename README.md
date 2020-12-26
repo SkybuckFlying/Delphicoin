@@ -67,6 +67,20 @@ Requirements to take part in this project:
 
 12. Comments like these: /** someting */ should be converted as {** Something *} perhaps this will be usefull later for documentation generation ?!?
 
+12.  Comment blocks like these:
+
+/**
+ * 
+ */
+ 
+will be converted to:
+
+// /**
+// *
+// */
+
+to avoid introducing any c syntax like { }
+
 13. Commits should be done with git commit. Enter a short 50 character yellow description line at the top by pressing insert. Leave one blank line below that.
     Optionally enter a gray longer message below that, max character length should be 72. Then press escape and write :wq    (for write and quite)
        
