@@ -70,13 +70,18 @@ Requirements to take part in this project:
 12.  Comment blocks like these:
 
 /**
+
  * 
+ 
  */
+ 
  
 will be converted to:
 
 // /**
+
 // *
+
 // */
 
 to avoid introducing any c syntax like { }
