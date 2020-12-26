@@ -27,26 +27,28 @@ uses
 // Skybuck: don't know for sure yet how to convert this probably just some constants.
 // perhaps these constats must be moved elsewhere or seperated into a unit if it's shared.
 
-{**
- * Maximum amount of time that a block timestamp is allowed to exceed the
- * current network-adjusted time before the block will be accepted.
- *}
+(*
+
+// /**
+//  * Maximum amount of time that a block timestamp is allowed to exceed the
+//  * current network-adjusted time before the block will be accepted.
+// */
 static constexpr int64_t MAX_FUTURE_BLOCK_TIME = 2 * 60 * 60;
 
-{**
- * Timestamp window used as a grace period by code that compares external
- * timestamps (such as timestamps passed to RPCs, or wallet key creation times)
- * to block timestamps. This should be set at least as high as
- * MAX_FUTURE_BLOCK_TIME.
- *}
+// /**
+// * Timestamp window used as a grace period by code that compares external
+// * timestamps (such as timestamps passed to RPCs, or wallet key creation times)
+// * to block timestamps. This should be set at least as high as
+// * MAX_FUTURE_BLOCK_TIME.
+// */
 static constexpr int64_t TIMESTAMP_WINDOW = MAX_FUTURE_BLOCK_TIME;
 
-{**
- * Maximum gap between node time and block time used
- * for the "Catching up..." mode in GUI.
- *
- * Ref: https://github.com/bitcoin/bitcoin/pull/1026
- *}
+// /**
+// * Maximum gap between node time and block time used
+// * for the "Catching up..." mode in GUI.
+// *
+// * Ref: https://github.com/bitcoin/bitcoin/pull/1026
+// */
 static constexpr int64_t MAX_BLOCK_TIME_GAP = 90 * 60;
 
 *)
@@ -55,11 +57,11 @@ static constexpr int64_t MAX_BLOCK_TIME_GAP = 90 * 60;
 
 
 type
-	{** The block chain is a tree shaped structure starting with the
-	 * genesis block at the root, with each block potentially having multiple
-	 * candidates to be the next block. A blockindex may have multiple pprev pointing
-	 * to it, but at most one of them can be part of the currently active branch.
-	 *}
+	// /** The block chain is a tree shaped structure starting with the
+	// * genesis block at the root, with each block potentially having multiple
+	// * candidates to be the next block. A blockindex may have multiple pprev pointing
+	// * to it, but at most one of them can be part of the currently active branch.
+	// */
 	TBlockIndex = class
 	public
 		//! pointer to the hash of the block, if any. Memory is owned by this CBlockIndex
@@ -157,10 +159,10 @@ type
 // Skybuck: might also have to be moved to a shared unit very maybe/perhaps.
 arith_uint256 GetBlockProof(const CBlockIndex& block);
 
-/** Return the time it would take to redo the work difference between from and to, assuming the current hashrate corresponds to the difficulty at tip, in seconds. */
+// /** Return the time it would take to redo the work difference between from and to, assuming the current hashrate corresponds to the difficulty at tip, in seconds. */
 int64_t GetBlockProofEquivalentTime(const CBlockIndex& to, const CBlockIndex& from, const CBlockIndex& tip, const Consensus::Params&);
 
-/** Find the forking point between two chain tips. */
+// /** Find the forking point between two chain tips. */
 const CBlockIndex* LastCommonAncestor(const CBlockIndex* pa, const CBlockIndex* pb);
 
 implementation
@@ -216,13 +218,13 @@ uint256 GetBlockHash() const
 	return *phashBlock;
 }
 
-{**
- * Check whether this block's and all previous blocks' transactions have been
- * downloaded (and stored to disk) at some point.
- *
- * Does not imply the transactions are consensus-valid (ConnectTip might fail)
- * Does not imply the transactions are still stored on disk. (IsBlockPruned might return true)
- *}
+// /**
+// * Check whether this block's and all previous blocks' transactions have been
+// * downloaded (and stored to disk) at some point.
+// *
+// * Does not imply the transactions are consensus-valid (ConnectTip might fail)
+// * Does not imply the transactions are still stored on disk. (IsBlockPruned might return true)
+// */
 bool HaveTxsDownloaded() const { return nChainTx != 0; }
 
 int64_t GetBlockTime() const

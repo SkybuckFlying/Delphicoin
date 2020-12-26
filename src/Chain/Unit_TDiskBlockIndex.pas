@@ -10,7 +10,7 @@ unit Unit_TDiskBlockIndex;
 interface
 
 type
-	{** Used to marshal pointers into hashes for db storage. *}
+	// /** Used to marshal pointers into hashes for db storage. */
 	TDiskBlockIndex = class(TBlockIndex)
 	public:
 		uint256 hashPrev;

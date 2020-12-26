@@ -10,35 +10,35 @@ unit Unit_TChain;
 interface
 
 type
-	{** An in-memory indexed chain of blocks. *}
+	// /** An in-memory indexed chain of blocks. */
 	TChain = class
 	private:
 		std::vector<CBlockIndex*> vChain;
 
 	public:
-		{** Returns the index entry for the genesis block of this chain, or nullptr if none. *}
+		// /** Returns the index entry for the genesis block of this chain, or nullptr if none. */
 		CBlockIndex *Genesis() const {
 			return vChain.size() > 0 ? vChain[0] : nullptr;
 		}
 
-		{** Returns the index entry for the tip of this chain, or nullptr if none. *}
+		// /** Returns the index entry for the tip of this chain, or nullptr if none. */
 		CBlockIndex *Tip() const {
 			return vChain.size() > 0 ? vChain[vChain.size() - 1] : nullptr;
 		}
 
-		{** Returns the index entry at a particular height in this chain, or nullptr if no such height exists. *}
+		// /** Returns the index entry at a particular height in this chain, or nullptr if no such height exists. */
 		CBlockIndex *operator[](int nHeight) const {
 			if (nHeight < 0 || nHeight >= (int)vChain.size())
 				return nullptr;
 			return vChain[nHeight];
 		}
 
-		{** Efficiently check whether a block is present in this chain. *}
+		// /** Efficiently check whether a block is present in this chain. */
 		bool Contains(const CBlockIndex *pindex) const {
 			return (*this)[pindex->nHeight] == pindex;
 		}
 
-		{** Find the successor of a block in this chain, or nullptr if the given index is not found or is the tip. *}
+		// /** Find the successor of a block in this chain, or nullptr if the given index is not found or is the tip. */
 		CBlockIndex *Next(const CBlockIndex *pindex) const {
 			if (Contains(pindex))
 				return (*this)[pindex->nHeight + 1];
@@ -46,30 +46,30 @@ type
 				return nullptr;
 		}
 
-		{** Return the maximal height in the chain. Is equal to chain.Tip() ? chain.Tip()->nHeight : -1. *}
+		// /** Return the maximal height in the chain. Is equal to chain.Tip() ? chain.Tip()->nHeight : -1. */
 		int Height() const {
 			return vChain.size() - 1;
 		}
 
-		{** Set/initialize a chain with a given tip. *}
+		// /** Set/initialize a chain with a given tip. */
 		void SetTip(CBlockIndex *pindex);
 
-		{** Return a CBlockLocator that refers to a block in this chain (by default the tip). *}
+		// /** Return a CBlockLocator that refers to a block in this chain (by default the tip). */
 		CBlockLocator GetLocator(const CBlockIndex *pindex = nullptr) const;
 
-		{** Find the last common block between this chain and a block index entry. *}
+		// /** Find the last common block between this chain and a block index entry. */
 		const CBlockIndex *FindFork(const CBlockIndex *pindex) const;
 
-		{** Find the earliest block with timestamp equal or greater than the given time and height equal or greater than the given height. *}
+		// /** Find the earliest block with timestamp equal or greater than the given time and height equal or greater than the given height. */
 		CBlockIndex* FindEarliestAtLeast(int64_t nTime, int height) const;
 	end;
 
 
 implementation
 
-/**
- * CChain implementation
- */
+// /**
+// * CChain implementation
+// */
 void CChain::SetTip(CBlockIndex *pindex) {
     if (pindex == nullptr) {
         vChain.clear();
@@ -117,7 +117,7 @@ const CBlockIndex *CChain::FindFork(const CBlockIndex *pindex) const {
     if (pindex->nHeight > Height())
         pindex = pindex->GetAncestor(Height());
     while (pindex && !Contains(pindex))
-        pindex = pindex->pprev;
+		pindex = pindex->pprev;
     return pindex;
 }
 
@@ -129,10 +129,10 @@ CBlockIndex* CChain::FindEarliestAtLeast(int64_t nTime, int height) const
     return (lower == vChain.end() ? nullptr : *lower);
 }
 
-/** Turn the lowest '1' bit in the binary representation of a number into a '0'. */
+// /** Turn the lowest '1' bit in the binary representation of a number into a '0'. */
 int static inline InvertLowestOne(int n) { return n & (n - 1); }
 
-/** Compute what height to jump back to with the CBlockIndex::pskip pointer. */
+// /** Compute what height to jump back to with the CBlockIndex::pskip pointer. */
 int static inline GetSkipHeight(int height) {
     if (height < 2)
         return 0;

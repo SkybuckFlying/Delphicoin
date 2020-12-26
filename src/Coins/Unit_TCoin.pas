@@ -9,13 +9,13 @@ unit Unit_TCoin;
 
 interface
 
-{**
- * A UTXO entry.
- *
- * Serialized format:
- * - VARINT((coinbase ? 1 : 0) | (height << 1))
- * - the non-spent CTxOut (via TxOutCompression)
- *}
+// /**
+// * A UTXO entry.
+// *
+// * Serialized format:
+// * - VARINT((coinbase ? 1 : 0) | (height << 1))
+// * - the non-spent CTxOut (via TxOutCompression)
+// */
 class Coin
 {
 public:

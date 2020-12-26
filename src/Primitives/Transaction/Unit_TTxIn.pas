@@ -9,10 +9,10 @@ unit Unit_TTxIn;
 
 interface
 
-{** An input of a transaction.  It contains the location of the previous
- * transaction's output that it claims and a signature that matches the
- * output's public key.
- *}
+// /** An input of a transaction.  It contains the location of the previous
+// * transaction's output that it claims and a signature that matches the
+// * output's public key.
+// */
 class CTxIn
 {
 public:
