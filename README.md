@@ -72,15 +72,20 @@ Requirements to take part in this project:
     /**
     * 
     */
- 
- 
+
 will be converted to:
 
     // /**
     // *
     // */
 
-to avoid introducing any c syntax like { }
+instead of
+
+    {**
+     *
+     *}
+
+to avoid re-introducing any c syntax like { }
 
 13. Commits should be done with git commit. Enter a short 50 character yellow description line at the top by pressing insert. Leave one blank line below that.
     Optionally enter a gray longer message below that, max character length should be 72. Then press escape and write :wq    (for write and quite)
