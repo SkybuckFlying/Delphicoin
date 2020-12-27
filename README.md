@@ -12,12 +12,58 @@ The/this delphicoin repository below will function as a collector to collect the
 
 This project converts the bitcoin c/c++ source code into Pascal/Delphi source code.
 
-### Most important rule when converting a c/c++ file to Delphi
+### Two important rules when converting a c/c++ file to Delphi must be followed:
 
-The converted delphi file must contain the bitcoin commit hash against which it was port.
+## 1. The original file paths must be recorded in the Delphi file/unit at the top:
+
+(Preferably below the copyright text with one empty line between it)
+
+For example unit_Tchain.pas:
+
+    // Copyright (c) 2009-2010 Satoshi Nakamoto
+    // Copyright (c) 2009-2019 The Bitcoin Core developers
+    // Copyright (c) 2020-2020 Skybuck Flying
+    // Copyright (c) 2020-2020 The Delphicoin Developers
+    // Distributed under the MIT software license, see the accompanying
+    // file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+    // Bitcoin file: src/chain.h
+    // Bitcoin file: src/chain.cpp
+    // Bitcoin commit hash: f656165e9c0d09e654efabd56e6581638e35c26c 
+    
+Another example unit_TBlockStatus.pas:
+
+    // Copyright (c) 2009-2010 Satoshi Nakamoto
+    // Copyright (c) 2009-2019 The Bitcoin Core developers
+    // Copyright (c) 2020-2020 Skybuck Flying
+    // Copyright (c) 2020-2020 The Delphicoin Developers
+    // Distributed under the MIT software license, see the accompanying
+    // file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+    // Bitcoin file: src/chain.h
+    // Bitcoin file: src/chain.cpp
+    // Bitcoin commit hash: f656165e9c0d09e654efabd56e6581638e35c26c     
+
+(This unit also came from chain.h and chain.cpp it was split into a seperate unit, even though the path indicates this, this is not assured since
+bitcoin may have it's own subfolders, this could lead to confusion there it is very beneficial to record the origins/file paths of the source code like this.)
+
+## 2. The converted delphi file must contain the bitcoin commit hash against which it was ported.
+
+For example unit_Tchain.pas
+
+    // Bitcoin commit hash: f656165e9c0d09e654efabd56e6581638e35c26c
+    
+Another example unit_TBlockStatus.pas:
+
+    // Bitcoin commit hash: f656165e9c0d09e654efabd56e6581638e35c26c
+
+(Identical since it come from the same bitcoin commit/hash in the working tree).
+
+This will allow to do a git diff in the future against the converted bitcoin commit/hash and any future bitcoin commit/hash to detect any changes that may need porting to Delphi.
 
 For now the conversion attempt will be done against a moving target. This means some delphi units may have been converted
 against an older bitcoin commit/hash these may have to be re-converted or updated later once a new bitcoin release happens.
+At some point in the future we will try and stabilize the conversion process against a certain stable release/tag of bitcoin.
 
 ## The aim of the project is to:
 
