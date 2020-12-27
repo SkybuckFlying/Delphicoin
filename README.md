@@ -12,7 +12,14 @@ The/this delphicoin repository below will function as a collector to collect the
 
 This project converts the bitcoin c/c++ source code into Pascal/Delphi source code.
 
-The aim of the project is to:
+### Most important rule when converting a c/c++ file to Delphi
+
+The converted delphi file must contain the bitcoin commit hash against which it was port.
+
+For now the conversion attempt will be done against a moving target. This means some delphi units may have been converted
+against an older bitcoin commit/hash these may have to be re-converted or updated later once a new bitcoin release happens.
+
+## The aim of the project is to:
 
 1. Convert all necessary bitcoin c/c++ source code to Pascal/Delphi for easier studieing of bitcoin's operation.
 2. Work together with other Delphi/Pascal developers for fun and profit ! =D
