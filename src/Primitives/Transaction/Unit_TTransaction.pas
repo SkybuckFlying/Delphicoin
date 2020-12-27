@@ -5,6 +5,10 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+// Bitcoin file: src/primitives/transaction.h
+// Bitcoin file: src/primitives/transaction.cpp
+// Bitcoin commit hash: f656165e9c0d09e654efabd56e6581638e35c26c
+
 unit Unit_TTransaction;
 
 interface
